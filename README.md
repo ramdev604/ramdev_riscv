@@ -310,3 +310,94 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 
 
 ![M](https://github.com/ramdev604/ramdev_riscv/assets/43489027/c93d95d8-7754-4a91-a12d-090f305c293b)
+</details>
+
+<details>
+<summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
+<br>
+
+# RISC-V Architecture Block Diagram
+
+![image](https://github.com/Pavan2280/RISC-V/assets/131603225/1695d5f6-eab9-4279-9419-b2817800b002)
+
+## Overview
+This RISC-V Architecture Block Diagram illustrates the fundamental components and their interactions within a computer system based on the RISC-V instruction set architecture. RISC-V is a modular and customizable architecture, providing a versatile framework for designing processors tailored to specific application requirements.
+
+## Components
+1. **CPU (Central Processing Unit)**
+   - *Description*: The CPU serves as the core of the RISC-V processor, responsible for executing instructions. It includes multiple stages:
+     - Instruction Fetch (IF): Fetches instructions from memory.
+     - Instruction Decode (ID): Decodes the fetched instructions.
+     - Execution (EX): Performs arithmetic and logic operations.
+     - Memory (MEM): Manages data memory access.
+     - Write Back (WB): Writes results back to registers.
+
+2. **Instruction Memory**
+   - *Description*: This memory component stores the program's instructions that the CPU fetches and executes. It's essential for the program's proper execution.
+
+3. **Data Memory**
+   - *Description*: Data Memory stores data used by the CPU during program execution. It is crucial for data manipulation and storage.
+
+4. **Registers**
+   - *Description*: Registers are a set of general-purpose storage units used for temporary data storage and manipulation by the CPU. They play a pivotal role in instruction execution.
+
+5. **Control Unit**
+   - *Description*: The Control Unit manages control signals and coordinates the activities of the CPU's components, ensuring the proper execution of instructions.
+
+6. **ALU (Arithmetic Logic Unit)**
+   - *Description*: The ALU performs arithmetic and logic operations as directed by the CPU's instructions. It is the computational workhorse of the processor.
+
+7. **Instruction Decoder**
+   - *Description*: The Instruction Decoder interprets and decodes instructions fetched from memory. It translates instructions into actions for the CPU to execute.
+
+8. **Cache Memory**
+   - *Description*: Cache Memory provides fast access to frequently used instructions and data. It helps improve the system's overall performance by reducing memory access times.
+
+9. **Bus Interface**
+   - *Description*: The Bus Interface facilitates data transfer between the CPU, memory, and peripherals. It ensures efficient communication within the system.
+
+10. **Peripherals**
+    - *Description*: Peripherals are external devices such as input/output controllers, timers, and more. They connect to the CPU, enhancing the system's functionality by allowing interaction with the outside world.
+
+For the consecutive labs, we will use the "RISC-V lab starting point code" from https://github.com/stevehoover/RISC-V_MYTH_Workshop.
+
+Use the following links : [Link for the starter code](https://myth.makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2FRISC-V_MYTH_Workshop%2Fmaster%2Frisc-v_shell.tlv#)
+
+#### Task-1 : Program Counter
+![1](https://github.com/ramdev604/ramdev_riscv/assets/43489027/5e6a0708-0b36-466e-89d7-752df87e29a5)
+
+
+#### Task-2 : Instruction Fetch
+
+![2](https://github.com/ramdev604/ramdev_riscv/assets/43489027/f0fc2b62-666b-47db-9eb0-684dc0f4a7ee)
+
+#### Task-3 : Instruction Decode
+![3](https://github.com/ramdev604/ramdev_riscv/assets/43489027/6a93a93f-941b-447c-a63a-ef020f481146)
+
+
+#### Task-4 : Instruction Decode with validity
+![4](https://github.com/ramdev604/ramdev_riscv/assets/43489027/bf643b3c-7a05-4d6f-a7d9-6c497809ae18)
+
+
+#### Task-5 : Individual Instruction decode
+
+![5](https://github.com/ramdev604/ramdev_riscv/assets/43489027/1afaa73c-f639-4693-9e73-e93102983b84)
+
+#### Task-6 : Register File Read
+![6](https://github.com/ramdev604/ramdev_riscv/assets/43489027/a7bf1d22-4eee-4107-8225-151474b4910d)
+
+
+#### Task-7 : ALU
+![7](https://github.com/ramdev604/ramdev_riscv/assets/43489027/0bb9a648-8a14-4dc4-b285-796d48041509)
+
+
+#### Task-8 : Register File Write
+![8](https://github.com/ramdev604/ramdev_riscv/assets/43489027/29f141b3-9175-42ce-8050-d27241606554)
+
+
+#### Task-9 : Branch Instructions
+![9](https://github.com/ramdev604/ramdev_riscv/assets/43489027/52178131-01de-4d98-80b8-0a2efe2e12c2)
+
+
+#### Task-10 : Testbench to check functionality
+![10](https://github.com/ramdev604/ramdev_riscv/assets/43489027/b3346ed1-98fd-48f8-9162-38104ca7baeb)
