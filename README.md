@@ -364,40 +364,50 @@ For the consecutive labs, we will use the "RISC-V lab starting point code" from 
 Use the following links : [Link for the starter code](https://myth.makerchip.com/sandbox?code_url=https:%2F%2Fraw.githubusercontent.com%2Fstevehoover%2FRISC-V_MYTH_Workshop%2Fmaster%2Frisc-v_shell.tlv#)
 
 #### Task-1 : Program Counter
-![1](https://github.com/ramdev604/ramdev_riscv/assets/43489027/5e6a0708-0b36-466e-89d7-752df87e29a5)
+![1](https://github.com/ramdev604/ramdev_riscv/assets/43489027/8951f531-f486-4730-81e0-d5d63311d009)
+
 
 
 #### Task-2 : Instruction Fetch
 
-![2](https://github.com/ramdev604/ramdev_riscv/assets/43489027/f0fc2b62-666b-47db-9eb0-684dc0f4a7ee)
+![2](https://github.com/ramdev604/ramdev_riscv/assets/43489027/4bb8ffe4-dd00-4398-af98-ff0cac75e09c)
+
 
 #### Task-3 : Instruction Decode
-![3](https://github.com/ramdev604/ramdev_riscv/assets/43489027/6a93a93f-941b-447c-a63a-ef020f481146)
+
+![3](https://github.com/ramdev604/ramdev_riscv/assets/43489027/29d6a794-ef60-476c-ba0c-5f332dd29866)
 
 
 #### Task-4 : Instruction Decode with validity
-![4](https://github.com/ramdev604/ramdev_riscv/assets/43489027/bf643b3c-7a05-4d6f-a7d9-6c497809ae18)
+
+![4](https://github.com/ramdev604/ramdev_riscv/assets/43489027/4924b622-1e93-47aa-b712-d0270e4e1b4a)
 
 
 #### Task-5 : Individual Instruction decode
 
-![5](https://github.com/ramdev604/ramdev_riscv/assets/43489027/1afaa73c-f639-4693-9e73-e93102983b84)
+![5](https://github.com/ramdev604/ramdev_riscv/assets/43489027/50b7f0b9-efee-4191-8b45-98ca191e241b)
+
 
 #### Task-6 : Register File Read
-![6](https://github.com/ramdev604/ramdev_riscv/assets/43489027/a7bf1d22-4eee-4107-8225-151474b4910d)
+
+![6](https://github.com/ramdev604/ramdev_riscv/assets/43489027/fdece996-5969-4701-9942-56c68488ab11)
 
 
 #### Task-7 : ALU
-![7](https://github.com/ramdev604/ramdev_riscv/assets/43489027/0bb9a648-8a14-4dc4-b285-796d48041509)
+
+![7](https://github.com/ramdev604/ramdev_riscv/assets/43489027/5d8d90fc-fc79-4747-9887-930b43327bf5)
 
 
 #### Task-8 : Register File Write
-![8](https://github.com/ramdev604/ramdev_riscv/assets/43489027/29f141b3-9175-42ce-8050-d27241606554)
+
+![8](https://github.com/ramdev604/ramdev_riscv/assets/43489027/a74d4d26-19c0-4b8f-90e2-02a99819ac22)
 
 
 #### Task-9 : Branch Instructions
-![9](https://github.com/ramdev604/ramdev_riscv/assets/43489027/52178131-01de-4d98-80b8-0a2efe2e12c2)
+
+![9](https://github.com/ramdev604/ramdev_riscv/assets/43489027/18e86785-1102-40a4-a21c-758787ec19aa)
 
 
 #### Task-10 : Testbench to check functionality
-![10](https://github.com/ramdev604/ramdev_riscv/assets/43489027/b3346ed1-98fd-48f8-9162-38104ca7baeb)
+![10](https://github.com/ramdev604/ramdev_riscv/assets/43489027/c00137b2-94ff-46b7-b758-2bcab9f8b8ab)
+</details>
