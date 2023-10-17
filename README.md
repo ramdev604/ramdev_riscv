@@ -114,7 +114,6 @@ To access a specific example, please follow these steps:
 1) **Navigate to the 'Learn' section**
 2) **Click on 'Examples'**
 3) **Load 'FGPA Multiplier' Example**
-4) **Load FGPA Multiplier Example**
 
 **B) XOR Gate**
 ```
@@ -201,7 +200,7 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 ![I](https://github.com/ramdev604/ramdev_riscv/assets/43489027/c0504f06-eb5a-4875-ab2f-f7bea40e07ef)
 
 
-**B) Pipeline Implementation**
+**Pipeline Implementation**
 
 ```
 |comp
@@ -223,7 +222,7 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 + Better error checking
 + Automated clock gating
 
-**A) 2 cycle calculator with validity**
+**2 cycle calculator with validity**
 
 ```
 |calc
@@ -255,7 +254,7 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 ![K](https://github.com/ramdev604/ramdev_riscv/assets/43489027/d7ae3d73-f6d0-49ee-b21f-a00526f193ce)
 
 
-**B) Distance Calculator**
+**Distance Calculator**
 ```
 |calc
       @1
@@ -277,7 +276,7 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 ```
 ![L](https://github.com/ramdev604/ramdev_riscv/assets/43489027/e03dbae4-05ed-4cd5-a7c6-ec5580c48d6f)
 
-**A) Calulator Memory**
+**Calulator Memory**
 ```
 |calc
       @0
