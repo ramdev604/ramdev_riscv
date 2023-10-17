@@ -407,3 +407,91 @@ Use the following links : [Link for the starter code](https://myth.makerchip.com
 #### Task-10 : Testbench to check functionality
 ![10](https://github.com/ramdev604/ramdev_riscv/assets/43489027/c00137b2-94ff-46b7-b758-2bcab9f8b8ab)
 </details>
+
+<details>
+<summary>DAY 5 : Complete Pipelined RISC-V Micro Architecture </summary>
+<br>
+
+- Pipelining helps improve the operating frequency by breaking down the micro-arch ito substages that consume lesser time.But this process intriduces some hazards and dependencies such as
+  - Data Hazards
+  - Structural Hazards
+  - Control Hazards
+  - Name Dependence
+  - Anti Dependence
+  - Output Dependence
+
+ ## 3-cycle RISC-V
+
+ - A simple pipeline approach where we divide the arch into 3 stages ie., PC, Decode to ALU, Reg write.
+ - This requires a valid signal that is generated every 3 clock cylces
+
+### Generation of 3 cycle valid signal
+
+![1](https://github.com/ramdev604/ramdev_riscv/assets/43489027/e52c71ea-73b4-47c9-94e0-958decede9ea)
+
+
+- There might be some invalid cycles (invalid operation when valid is on) being encountered in this proccess. SO we have to take care of them.
+
+### 3-cycle RISC-V To take care of invalid signals
+
+- Avoid writing into register file for invalid operations
+- Avoid redirecting PC for nvalid instructions(branch)
+
+![2](https://github.com/ramdev604/ramdev_riscv/assets/43489027/cacf617e-f29e-4a49-b0b8-9ef2ab6d5a86)
+
+
+### Introduce 5 stage pipeline 
+
+- 5 stage pipeline : PC, Decode, Reg Rd, ALU, Reg write
+
+## Solutions to Pipeline Hazards
+
+1. Register file bypass
+
+![3](https://github.com/ramdev604/ramdev_riscv/assets/43489027/e789b113-dde4-4115-a609-ca9fdb00e320)
+
+
+2. Correct the branch target path
+
+![4](https://github.com/ramdev604/ramdev_riscv/assets/43489027/94934fb0-3df4-4773-925e-e4ca6ec34a5d)
+
+
+3. Complete Instruction Decode
+
+
+![5](https://github.com/ramdev604/ramdev_riscv/assets/43489027/1b0955fa-eb12-41ca-bbc0-0ad95e595f37)
+
+4. Complete ALU
+
+![6](https://github.com/ramdev604/ramdev_riscv/assets/43489027/167fb069-a103-42d3-b539-163dcd7b7a95)
+
+
+## Completing RISC-V CPU with final touch of Load/Store Instructions
+
+1. Redirecting Loads
+
+
+![7](https://github.com/ramdev604/ramdev_riscv/assets/43489027/5bdb61cf-4c8d-432f-bf75-180f3baf6b99)
+
+2. Load Data from Memory to register file
+
+
+![8](https://github.com/ramdev604/ramdev_riscv/assets/43489027/1139ae43-0c91-49d9-ba26-a01a611edae5)
+
+3. Instantiate Data memory to CPU
+
+![9](https://github.com/ramdev604/ramdev_riscv/assets/43489027/8875e9e1-2985-42f1-8504-1c20b033149e)
+
+
+4. Add loads and stores to test the program
+
+```
+m4_asm(SW r0, r10, 100)
+m4_asm(LW r15, r0, 100)
+```
+5. Lab for jump instructions
+
+![10](https://github.com/ramdev604/ramdev_riscv/assets/43489027/80d2ba25-2358-4e56-a93b-97828a924454)
+
+
+</details>
