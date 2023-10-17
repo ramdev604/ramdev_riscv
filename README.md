@@ -316,10 +316,6 @@ $out[31:0] = $op[1] ? ($op[0] ? $qut: $prod): ($op [0] ? $diff: $sum);
 <summary>DAY 4 : Basic RISC-V CPU Micro Architecture</summary>
 <br>
 
-# RISC-V Architecture Block Diagram
-
-![image](https://github.com/Pavan2280/RISC-V/assets/131603225/1695d5f6-eab9-4279-9419-b2817800b002)
-
 ## Overview
 This RISC-V Architecture Block Diagram illustrates the fundamental components and their interactions within a computer system based on the RISC-V instruction set architecture. RISC-V is a modular and customizable architecture, providing a versatile framework for designing processors tailored to specific application requirements.
 
